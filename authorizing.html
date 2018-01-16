@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+	<head>
+		<script>
+			var users = ["eporchetta-1234", "rcastro-2323"; "rweasily-7521"];
+			var authorized = false;
+			var attempts = 0;
+			while(!authorized && attempts < 3){
+				var login = prompt("Username: ");
+				var password = prompt("Password: ");
+				for (var index = 0; index < users.length; index++){
+					var user = users[index].substring(0,users[index].indexOf("-"));
+					var pwd = users[index].substring(users[index].indexOf("-")+1,users[index].length);
+				if (login == user && password == pwd){
+					alert("Welcome");
+					authorized = true;
+				}
+				else{
+					authorized = false
+					attempts++
+			}
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

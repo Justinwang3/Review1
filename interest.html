@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+	<head>
+		<script>
+			var build = "";
+			var amt = 0;
+			var t = prompt("How many years");
+			var p = prompt("What is your principal investment?");
+			var r = prompt("What is your rate?");
+			for(var years = 1; years <= t; years+=1){
+				amt = Math.round(100*p*Math.pow(1+r,years))/100;
+				build += "Years " + years + " = " + amt +"<br>";
+			}
+			document.write(build);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

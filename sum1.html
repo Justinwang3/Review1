@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+	<head>
+		<script>
+			var guess = 0;
+			var r1;
+			var r2;
+			var sum;
+			while(guess != sum){
+				guess = parseFloat(prompt("What is the sum of two random numbers"));
+				r1 = Math.floor(Math.random()*10)+1;
+				r2 = Math.floor(Math.random()*10)+1;
+				sum = r1 + r2;
+			}
+			alert("Correct! the sum of the numbers is: " + sum);
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

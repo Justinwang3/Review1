@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+	<head>
+		<script>
+			var grade = 0;
+			var g_amt = 0;
+			var total = 0;
+			while(grade != -1){
+				grade = parseFloat(prompt("Enter grade"));
+				total += grade;
+				g_amt++;
+			}
+			var average = (total+1)/(g_amt-1);
+			alert("The average of the grades is " + average);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

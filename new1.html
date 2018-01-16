@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<style></style>
+		<script>
+			function grades(){
+				var grade1 = document.getElementById("grade1");
+				var grade2 = document.getElementById("grade2");
+				var grade3 = document.getElementById("grade3");
+				var results = document.getElementById("results");
+				var average = (parseFloat(grade1.value)+parseFloat(grade2.value)+parseFloat(grade3.value))/3;
+				var build = "";
+				if (average >= 90){
+					build += "A";
+					}
+				else if (80 <= average && average <= 89){
+					build += "B";
+					}
+				else if (70 <= average && average <= 79){
+					build += "C";
+					}
+				else if (60 <= average && average <= 69){
+					build += "D";
+					}
+				else if (average < 60){
+					build += "F";
+					}
+				results.innerHTML = build + "-" + average;
+ 			}
+		</script>
+	</head>
+	<body>
+		<input id="grade1" type="text" placeholder="Enter First Grade">
+		<br>
+		<input id="grade2" type="text" placeholder="Enter Second Grade">
+		<br>
+		<input id="grade3" type="text" placeholder="Enter Third Grade">
+		<br>
+		<button onclick="grades()">Calculate</button>
+		<br>
+		<div id="results"> </div>
+	</body>
+</html>

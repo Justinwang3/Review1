@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+	<head>
+		<script>
+			var ofd = ["1D2","2F1","1G3"];
+			var freshmen = 0;
+			var gibson = 0;
+			for(var index = 0; index < ofd.length; index++){
+				if(ofd[index].substring(0,1) == 1){
+					freshmen++;
+				}
+				if(ofd[index].indexOf("G") > -1){
+					gibson++;
+				}
+			}
+			console.log("Freshmen: " + freshmen);
+			console.log("Gibson: " + gibson);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
